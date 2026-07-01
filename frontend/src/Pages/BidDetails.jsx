@@ -365,7 +365,10 @@ const handleAutoBidSubmit = async (e) => {
                         Actual Price: ₹{product.price.toLocaleString("en-IN")}/-
                       </div>
                       <div className="text-lg font-semibold olive-dark">
-                        Current Bid: ₹{currentBid.toLocaleString("en-IN")}/-
+                        {currentBid == null
+  ? `₹${product.price.toLocaleString("en-IN")}/-`
+  : `₹${currentBid.toLocaleString("en-IN")}/-`
+}
                       </div>
                     </div>
                   </div>

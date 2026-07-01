@@ -28,7 +28,7 @@ body{
 .btn-purple:hover{
     transform: scale(1.01);
   box-shadow:0 0 10px#056973;
-  text-shadow:0 0 10px #056973;
+  text-shadow:0 0 10px #170573;
 }
 
 @keyframes fadeInBlink{
